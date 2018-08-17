@@ -43,3 +43,59 @@ img {
 button {
     margin: 4px;
 }
+
+#avaliable_days_of_week{
+    display: none;
+}
+#avaliable_months_of_year{
+    display: none;
+}
+
+#notification_timing_avsolute_value{
+    display: none;
+}
+
+.roles{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.members{
+    display: inline-block;
+    vertical-align: top;
+
+}
+.list_add_button{
+    text-align: right;
+}
+
+h1{
+    text-align: center;
+}
+
+.button{
+    background: -webkit-linear-gradient( 0deg ,#EE795D, #C769A3);
+    font-size: large;
+    border-radius: 20px;
+    border-width: 0px;
+    color: #ffffff;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+body{
+    background: #30363D;
+}
+h1{
+    margin: 50px;
+    color: #FF8C00;
+    background: -webkit-linear-gradient(0deg, #EE795D, #C769A3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+a{
+    color: #FFFFFF;
+}
+label{
+    color: #FFFFFF;
+}
