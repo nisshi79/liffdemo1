@@ -1,0 +1,22 @@
+{
+    "name": "yui/liffDemo",
+    "description": "liff",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Yui Nishimura",
+            "email": "nisshi.yui79@gmail.com"
+        }
+    ],
+    "require": {"php": "^7.1.16",
+        "nesbot/carbon": "^1.29",
+        "linecorp/line-bot-sdk": "^2.3",
+        "silex/silex": "^2.3",
+        "slim/slim": "^3.10",
+        "monolog/monolog": "^1.23",
+        "illuminate/database": "*"
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "*"
+    }
+}
