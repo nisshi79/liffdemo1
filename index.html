@@ -5,6 +5,40 @@
 </head>
 
 <body>
+<h1>初期設定</h1>
+<form name = "tableInfo" method = "POST" action="send.php">
+    <div class="form">
+        <input type="hidden" id="group_id" value="" name="group_id">
+        <label for="title">当番名</label><br>
+        <input type="text" name="title" id="title"><br><br>
+        <div class = "roles">
+            <a>役割</a><br>
+            <ol id="roles_list"><!-- "id" attribute is required -->
+                <li class="roles_list_var"><!-- .(id)_var -->
+                    <input type="text" data-name-format="roles_list[]" name="roles_list[]" id="roles_list_0">
+                    <button class="roles_list_del">Delete</button><!-- .(id)_del -->
+                </li>
+            </ol>
+            <input type="button" value="Add" class="roles_list_add list_add_button"><!-- .(id)_add -->
+        </div>
+        <div class="members">
+            <a>メンバー</a><br>
+            <ol id="members_list"><!-- "id" attribute is required -->
+                <li class="members_list_var"><!-- .(id)_var -->
+                    <input type="text" data-name-format="members_list[]" name="members_list[]" id="members_list_0">
+                    <button class="members_list_del">Delete</button><!-- .(id)_del -->
+                </li>
+            </ol>
+            <input type="button" value="Add" class="members_list_add list_add_button"><!-- .(id)_add --><br>
+        </div>
+
+        <br><br>
+        <button type="submit" class="button">送信</button>
+
+    </div>
+</form>
+
+
     <div class="buttongroup">
         <div class="buttonrow">
             <button id="openwindowbutton">Open Window</button>
@@ -66,7 +100,13 @@
             </tr>
         </table>
     </div>
-    
-    <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
-    <script src="liff-starter.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.add-input-area@4.11.0/dist/jquery.add-input-area.min.js"></script>
+<script src="liff-starter.js"></script>
+<!--<script type="text/javascript">
+</script>-->
+<script src="jquery.add-input-area.min.js"></script>
+<script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
+<script src="liff-starter.js"></script>
 </body>
